@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.LayoutController">
+   <left>
+      <Pane prefHeight="604.0" prefWidth="209.0" style="-fx-background-color: #54316b;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="materiel" alignment="CENTER" layoutY="598.0" mnemonicParsing="false" onAction="#showMateriel" prefHeight="52.0" prefWidth="209.0" stylesheets="@../../style.css" text="materiel">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font></Button>
+            <Button fx:id="machine" alignment="CENTER" layoutY="546.0" mnemonicParsing="false" onAction="#showMachine" prefHeight="52.0" prefWidth="209.0" stylesheets="@../../style.css" text="machine">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font></Button>
+            <Button fx:id="employe" alignment="CENTER" layoutY="494.0" mnemonicParsing="false" onAction="#showEmploye" prefHeight="52.0" prefWidth="209.0" stylesheets="@../../style.css" text="Employe">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font></Button>
+            <Button fx:id="intervention" alignment="CENTER" layoutY="442.0" mnemonicParsing="false" onAction="#showIntervention" prefHeight="52.0" prefWidth="209.0" stylesheets="@../../style.css" text="        Intervention">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font></Button>
+            <Label layoutX="14.0" layoutY="322.0" text="Service maintenance" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Label>
+            <Pane layoutX="-2.0" prefHeight="91.0" prefWidth="211.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="93.0" layoutX="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/resize-16446882021910573729logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="persoInfo" layoutY="91.0" mnemonicParsing="false" onAction="#persoInfo" prefHeight="36.0" prefWidth="41.0" stylesheets="@../../style.css" />
+            <FontAwesomeIconView fill="WHITE" glyphName="GEARS" layoutX="41.0" layoutY="281.0" size="100" />
+            <FontAwesomeIconView fill="#eee9e9" glyphName="NAVICON" layoutX="27.0" layoutY="476.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="29.0" layoutY="528.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="SERVER" layoutX="26.0" layoutY="580.0" size="25" />
+            <FontAwesomeIconView fill="#f5f5f5" glyphName="WRENCH" layoutX="25.0" layoutY="631.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="SLIDERS" layoutX="9.0" layoutY="116.0" size="23" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

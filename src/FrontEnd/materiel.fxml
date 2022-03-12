@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.matController">
+   <children>
+      <TableView fx:id="materiels" layoutX="146.0" layoutY="203.0" prefHeight="320.0" prefWidth="421.0" stylesheets="@../../styl.css">
+         <columns>
+            <TableColumn fx:id="intitule" prefWidth="198.0" text="Intitule" />
+            <TableColumn fx:id="statut" prefWidth="220.0" text="Statut" />
+         </columns>
+      </TableView>
+      <Button fx:id="ajouter" layoutX="37.0" layoutY="83.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="37.0" prefWidth="109.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="     Ajouter" />
+      <Button fx:id="modifier" layoutX="155.0" layoutY="83.0" mnemonicParsing="false" onAction="#modifier" prefHeight="37.0" prefWidth="109.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="     Modifier" />
+      <Button fx:id="supprimer" layoutX="273.0" layoutY="83.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="37.0" prefWidth="109.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="     Supprimer" />
+      <TextField fx:id="chercher" layoutX="519.0" layoutY="83.0" prefHeight="37.0" prefWidth="175.0" promptText="chercher" styleClass="custom-text-field" stylesheets="@../../styl.css" />
+      <Button fx:id="detail" layoutX="394.0" layoutY="83.0" mnemonicParsing="false" onAction="#detail" prefHeight="37.0" prefWidth="109.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="     Details" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="48.0" layoutY="110.0" size="22" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PENCIL" layoutX="164.0" layoutY="109.0" size="22" />
+      <FontAwesomeIconView fill="WHITE" glyphName="TRASH" layoutX="280.0" layoutY="109.0" size="22" />
+      <FontAwesomeIconView fill="WHITE" glyphName="TABLE" layoutX="404.0" layoutY="111.0" size="22" />
+   </children>
+</Pane>

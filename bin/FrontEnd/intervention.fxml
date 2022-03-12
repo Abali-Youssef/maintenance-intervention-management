@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.intController">
+   <children>
+      <TableView fx:id="interventions" layoutX="34.0" layoutY="96.0" prefHeight="200.0" prefWidth="684.0" stylesheets="@../../styl.css">
+         <columns>
+            <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="date" prefWidth="115.0" text="Date" />
+            <TableColumn fx:id="statut" prefWidth="103.0" text="Statut" />
+            <TableColumn fx:id="machine" prefWidth="125.0" text="Machine" />
+            <TableColumn fx:id="nb_intervenant" prefWidth="129.0" text="Employés " />
+            <TableColumn fx:id="nb_materiel" prefWidth="136.0" text="Materiels" />
+         </columns>
+      </TableView>
+      <Button fx:id="ajouter" layoutX="40.0" layoutY="25.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="37.0" prefWidth="109.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="     Ajouter" />
+      <Button fx:id="modifier" layoutX="158.0" layoutY="25.0" mnemonicParsing="false" onAction="#modifier" prefHeight="37.0" prefWidth="109.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="     Modifier" />
+      <Button fx:id="supprimer" layoutX="276.0" layoutY="25.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="37.0" prefWidth="109.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="     Supprimer" />
+      <TextField fx:id="chercher" layoutX="517.0" layoutY="27.0" prefHeight="37.0" prefWidth="188.0" promptText="chercher" styleClass="custom-text-field" stylesheets="@../../styl.css" />
+      <DatePicker fx:id="debut" layoutX="231.0" layoutY="327.0" prefHeight="37.0" prefWidth="174.0" promptText="début" stylesheets="@../../styl.css" />
+      <DatePicker fx:id="fin" layoutX="422.0" layoutY="327.0" prefHeight="37.0" prefWidth="174.0" promptText="fin" stylesheets="@../../styl.css" />
+      <Label layoutX="61.0" layoutY="335.0" style="-fx-text-fill: #702fbb;" stylesheets="@../../styl.css" text="Selectionner une période">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="afficher" layoutX="619.0" layoutY="324.0" mnemonicParsing="false" onAction="#afficher" prefHeight="39.0" prefWidth="99.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="      Afficher" />
+      <BarChart fx:id="intchart" layoutX="34.0" layoutY="364.0" prefHeight="232.0" prefWidth="684.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Button fx:id="imprimer" layoutX="393.0" layoutY="25.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="37.0" prefWidth="109.0" styleClass="custom-purple-button" stylesheets="@../../styl.css" text="     Imprimer" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="52.0" layoutY="54.0" size="22" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PENCIL" layoutX="166.0" layoutY="52.0" size="22" />
+      <FontAwesomeIconView fill="WHITE" glyphName="TRASH" layoutX="283.0" layoutY="52.0" size="22" />
+      <FontAwesomeIconView fill="WHITE" glyphName="PRINT" layoutX="400.0" layoutY="53.0" size="22" />
+      <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART" layoutX="625.0" layoutY="350.0" size="22" />
+   </children>
+</Pane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.ordreController">
+   <children>
+      <Label layoutX="42.0" layoutY="26.0" text="Liste des ordres" textFill="#5b209a">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font></Label>
+      <TableView fx:id="interventions" layoutX="22.0" layoutY="105.0" prefHeight="229.0" prefWidth="607.0" stylesheets="@../../styl.css">
+         <columns>
+            <TableColumn fx:id="nom" prefWidth="156.0" text="nom" />
+            <TableColumn fx:id="statut" prefWidth="129.0" text="statut" />
+            <TableColumn fx:id="date" prefWidth="153.0" text="date" />
+            <TableColumn fx:id="machine" prefWidth="166.0" text="machine" />
+         </columns>
+      </TableView>
+      <RadioButton fx:id="tous" layoutX="32.0" layoutY="79.0" mnemonicParsing="false" onAction="#tous" text="tous" textFill="#ee540d">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="encours" layoutX="106.0" layoutY="79.0" mnemonicParsing="false" onAction="#enCours" text="En cours" textFill="#ee540d">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="finis" layoutX="209.0" layoutY="79.0" mnemonicParsing="false" onAction="#finis" text="Finis" textFill="#ee540d">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></RadioButton>
+   </children>
+</Pane>

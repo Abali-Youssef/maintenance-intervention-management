@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.userController">
+   <left>
+      <Pane prefHeight="522.0" prefWidth="229.0" style="-fx-background-color: #54316b;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="persoinfo" layoutY="462.0" mnemonicParsing="false" onAction="#persoInfo" prefHeight="60.0" prefWidth="229.0" stylesheets="@../../style.css" text="      Compte personnel">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font></Button>
+            <Button fx:id="ordre" alignment="CENTER" layoutY="402.0" mnemonicParsing="false" onAction="#ordre" prefHeight="60.0" prefWidth="230.0" stylesheets="@../../style.css" text="Ordre de travail">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font></Button>
+            <Pane prefHeight="91.0" prefWidth="229.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="93.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/resize-16446882021910573729logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="24.0" layoutY="268.0" text="Service maintenance" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="GEARS" layoutX="58.0" layoutY="232.0" size="100" />
+            <FontAwesomeIconView fill="WHITE" glyphName="TASKS" layoutX="18.0" layoutY="441.0" size="25" />
+            <FontAwesomeIconView fill="#fcfcfc" glyphName="USER" layoutX="18.0" layoutY="501.0" size="25" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

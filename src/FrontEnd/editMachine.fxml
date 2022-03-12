@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.editMachController">
+   <children>
+      <TextField fx:id="nom" layoutX="65.0" layoutY="54.0" prefHeight="41.0" prefWidth="224.0" promptText="intitulé du machine" styleClass="custom-text-field" stylesheets="@../../styl.css" />
+      <Button fx:id="modifier" layoutX="88.0" layoutY="128.0" mnemonicParsing="false" onAction="#modifier" prefHeight="41.0" prefWidth="178.0" styleClass="background-purple" stylesheets="@../../styl.css" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</Pane>

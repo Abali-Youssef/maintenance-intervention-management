@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.editMatController">
+   <children>
+      <TextField fx:id="intitule" layoutX="65.0" layoutY="54.0" prefHeight="41.0" prefWidth="224.0" promptText="intitulé du materiel" styleClass="custom-text-field" stylesheets="@../../styl.css" />
+      <Button fx:id="modifier" layoutX="88.0" layoutY="128.0" mnemonicParsing="false" onAction="#modifier" prefHeight="41.0" prefWidth="178.0" styleClass="background-purple" stylesheets="@../../styl.css" text="modifier" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+   </children>
+</Pane>

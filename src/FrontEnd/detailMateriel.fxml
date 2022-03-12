@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.detailMatController">
+   <children>
+      <Label layoutX="35.0" layoutY="72.0" stylesheets="@../../styl.css" text="Liste des interventions" textFill="#ee540d">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+      <TableView fx:id="interventions" layoutX="24.0" layoutY="99.0" prefHeight="210.0" prefWidth="607.0" stylesheets="@../../styl.css">
+         <columns>
+            <TableColumn fx:id="nom" prefWidth="156.0" text="nom" />
+            <TableColumn fx:id="statut" prefWidth="129.0" text="statut" />
+            <TableColumn fx:id="date" prefWidth="153.0" text="date" />
+            <TableColumn fx:id="machine" prefWidth="166.0" text="machine" />
+         </columns>
+      </TableView>
+      <Label layoutX="70.0" layoutY="21.0" stylesheets="@../../styl.css" text="nom" textFill="#ee540d">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="387.0" layoutY="21.0" stylesheets="@../../styl.css" text="statut" textFill="#ee540d">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="nomMat" editable="false" layoutX="142.0" layoutY="14.0" prefHeight="31.0" prefWidth="182.0" styleClass="custom-text-field" stylesheets="@../../styl.css" />
+      <TextField fx:id="statutMat" editable="false" layoutX="453.0" layoutY="11.0" prefHeight="31.0" prefWidth="176.0" styleClass="custom-text-field" stylesheets="@../../styl.css" />
+      <TextField fx:id="chercher" layoutX="455.0" layoutY="65.0" prefHeight="31.0" prefWidth="176.0" promptText="chercher par nom" styleClass="custom-text-field" stylesheets="@../../styl.css" />
+   </children>
+</Pane>
